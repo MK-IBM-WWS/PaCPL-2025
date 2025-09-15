@@ -47,4 +47,4 @@ class Rectangle(GeometricalShape):
         ax.add_patch(rectangle)
 
     def __repr__(self):
-        return f"{self._name} со сторонами {self._width} и {self._height} цвета {str(self._color)}."
+        return f"{self._name} со сторонами {self._width} и {self._height} цвета {str(self._color)}. Площадь: {self.area():.2f}"

@@ -6,4 +6,4 @@ class Square(Rectangle):
         self._name = "Квадрат"
 
     def __repr__(self):
-        return f"{self._name} со стороной {self.width} цвета {str(self.color)}."
+        return f"{self._name} со стороной {self.width} цвета {str(self.color)}. Площадь: {self.area():.2f}"

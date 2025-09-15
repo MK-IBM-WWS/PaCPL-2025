@@ -14,13 +14,12 @@ def main():
         fig, ax = plt.subplots(figsize=(10, 8))
         shape.draw(ax)
         print(shape)
-        print(f"Площадь: {shape.area():.2f}")
 
         ax.set_aspect('equal')
         ax.set_xlim(-(n + 2), n + 2)
         ax.set_ylim(-(n + 2), n + 2)
         ax.set_title(shape.get_name())
-        plt.savefig(f'./{shape.get_name()}.png')
+        plt.savefig(f'./figures/{shape.get_name()}.png')
         print(f"Изображение сохранено в '{shape.get_name()}.png'")
         print("-" * 40)
 

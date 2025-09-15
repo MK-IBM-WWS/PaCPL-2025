@@ -41,4 +41,4 @@ class Circle(GeometricalShape):
         ax.add_patch(circle)
 
     def __repr__(self):
-        return f"{self._name} с радиусом {self._radius} цвета {str(self._color)}."
+        return f"{self._name} с радиусом {self._radius} цвета {str(self._color)}. Площадь: {self.area():.2f}"
