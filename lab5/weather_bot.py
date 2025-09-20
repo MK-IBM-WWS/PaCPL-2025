@@ -5,7 +5,7 @@ from temp_gpaph import plot_temperature
 import datetime
 import os
 
-TOKEN = "7975396025:AAGg2DC2sYvMOEYUpRDtS87EFJUFwh67OWA"
+TOKEN = tg_token
 LOCATIONS = {"Moscow":"Moscow","Pskov":"Pskov","Udomlya":"Udomlya"}
 
 bot = TeleBot(TOKEN)
