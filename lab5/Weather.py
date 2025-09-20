@@ -19,7 +19,7 @@ class Weather:
         base_url = 'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline'
         unit_group = 'metric'
         content_type = 'json'
-        api_key = 'XL3Y3ET4F729XHZH6PH2LXVKY'
+        api_key = weather_api_key
         self.url = f"{base_url}/{location}/{date}/{date}?unitGroup={unit_group}&contentType={content_type}&key={api_key}"
         self.weather_by_hours=[]
         self.get_weather_by_hours_for_day_from_api()
