@@ -22,10 +22,11 @@ def cm_timer_2():
         elapsed_time = end_time - start_time
         print(f"time: {elapsed_time:.1f}")
 
-print("Using cm_timer_1:")
-with cm_timer_1():
-    sleep(5.5)
+if __name__ == '__main__':
+    print("Using cm_timer_1:")
+    with cm_timer_1():
+        sleep(5.5)
 
-print("\nUsing cm_timer_2:")
-with cm_timer_2():
-    sleep(1.8)
+    print("\nUsing cm_timer_2:")
+    with cm_timer_2():
+        sleep(1.8)
